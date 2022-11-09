@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="css/hamburger_style.css">
+</head>
+<body>  
+    <div id="navArea">
+        <nav>
+    <div class="inner">
+        <ul>
+            <li><a href="main_menu.html">メインメニューへ戻る</a></li>
+            <li><a href="">テンプレート一覧</a></li>
+            
+            <li><a class="set">設定</a></li>
+                
+                <ol>
+                    <li><a href="setting_environmental.php">  環境設定</a></li>
+                    <li><a href="">  保存期間の設定</a></li>
+                    <li><a href="">  使用時期</a></li>
+                </ol>
+          
+        
+            
+            <li><a href="">ユーザー情報</a></li>
+            <li><a href="#openModal">ログアウト</a></li>
+        </ul>
+        </div>
+        </nav>
+    <div class="toggle_btn"><span></span><span></span><span></span></div>
+    <div id="mask"></div>
+</div>
+        
+    <!-- <p class="lead">5-2-4<br>MENUがCLOSEに</p> -->
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="  crossorigin="anonymous"></script>
+<script src="js/hamburger.js"></script>
+
+<div id="openModal" class="modalDialog">
+    <div>	<a href="#close" title="Close" class="close">✕</a>
+		<div class="modal_title"><h3>確認</h3></div>
+        <p>本当に<span id="empha">ログアウト</span>してもよろしいですか？</p>
+		<div class="logout">
+			<button class="blue" type="button" onclick="location.href='login.html'">はい</button>
+        	<button type="button">キャンセル</button>
+		</div>
+    </div>
+</div>
+
+</body>
+</html>
