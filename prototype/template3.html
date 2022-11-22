@@ -1,0 +1,105 @@
+<html>
+    <head>
+        <mate charset="UTF-8">
+    </head>
+    <body>
+        <css>
+            <style>
+                .title{
+                    text-align: center;
+                }
+
+                .date{
+                    text-align: right;
+                }
+
+                .name{
+                    text-align: right;
+                }
+
+                .mokuji{
+                    background-color: gray;
+                    text-align: center;
+                }
+
+                .koumoku{
+                    resize: horizontal;
+                }
+
+                .content{
+                    resize: vertical;
+                    width: 450px;
+                }
+
+                .decision{
+                    resize: vertical;
+                    width: 450px;
+                }
+
+                .stamp{
+                    margin-left: 420px;
+                }
+            </style>
+            <table width="500px">
+                <tr class="title">
+                    <td colspan="4"><h1>議事録</h1></td>
+                </tr>
+                <tr class="date">
+                    <td colspan="4">令和　年　月　日</td>
+                </tr>
+                <tr class="name">
+                    <td colspan="4">対　株式会社　　様</td>
+                </tr>
+            </table>
+            <table border="1" class="kinyuujikou" width="500px">
+                <tr>
+                    <td class="mokuji">会議名</td>
+                    <td colspan="3"><textarea name="kaigimei" rows="1" class="koumoku"></textarea></td>
+                </tr>
+                <tr>
+                    <td class="mokuji">日時</td>
+                    <td><textarea name="hiduke" rows="1" class="koumoku"></textarea></td>
+                    <td class="mokuji">場所</td>
+                    <td><textarea name="basyo" rows="1" class="koumoku"></textarea></td>
+                </tr>
+                <tr>
+                    <td class="mokuji">司会</td>
+                    <td><textarea name="sikai" rows="1" class="koumoku"></textarea></td>
+                    <td class="mokuji">書記</td>
+                    <td><textarea name="syoki" rows="1" class="koumoku"></textarea></td>
+                </tr>
+                <tr>
+                    <td class="mokuji">場所</td>
+                    <td colspan="3"><textarea rows="1" class="koumoku"></textarea></td>
+                </tr>
+                <tr>
+                    <td class="mokuji">出席（社外）</td>
+                    <td><textarea rows="3"></textarea></td>
+                    <td class="mokuji">欠席（社外）</td>
+                    <td><textarea rows="3"></textarea></td>
+                </tr>
+                <tr>
+                    <td class="mokuji">出席（社内）</td>
+                    <td><textarea rows="3"></textarea></td>
+                    <td class="mokuji">欠席（社内）</td>
+                    <td><textarea rows="3"></textarea></td>
+                </tr>
+                <tr>
+                    <td class="mokuji">議事</td>
+                    <td colspan="3"><textarea class="content" rows="10"></textarea></td>
+                </tr>
+                <tr>
+                    <td class="mokuji">決定事項</td>
+                    <td colspan="3"><textarea class="decision" rows="15"></textarea></td>
+                </tr>
+            </table>
+            <br>
+            <table class="stamp" border="1" width="10px">
+                <tr>
+                    <td>　　</td>
+                    <td>　　</td>
+                </tr>
+            </table>
+        </css>
+    </body>
+</html>
