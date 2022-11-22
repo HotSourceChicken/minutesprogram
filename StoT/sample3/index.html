@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang = "jp">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Speech to Text in JavaScript</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center mt-5">
+            Speech to Text in JavaScript
+        </h1>
+    </div>        
+        <!-- <div class="form-group">
+        <textarea id="textbox" rows="10" class="form-control"></textarea>
+        </div> -->
+        <button onclick="startRecording(this)">録音開始</button>
+        <button onclick="stopRecording(this)">録音停止</button>
+        <ul id="output"></ul>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>-->    
+    <script src="./main.js"></script>
+    <script src="./dist/recorder.js"></script>
+</body>
+</html>
