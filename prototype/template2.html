@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <mate charset="UTF-8">
+    </head>
+    <body>
+        <css>
+            <style>
+                .mokuji{
+                    background-color: gray;
+                    color: white;
+                }
+
+                .title{
+                    text-align: center;
+                    border: 2px;
+                }
+
+                .created{
+                    text-align: right;
+                    border: 0px;
+                }
+
+                .content{
+                    text-align: center;
+                    background-color: gray;
+                    color: white;
+                }
+
+                .gijinaiyou{
+                    resize: vertical;
+                    width: 500px;
+                }
+            </style>
+
+            <table border="1" width="500px">
+                <tr>
+                    <td class="title" colspan="4"><h1>議事録</h1></td>
+                </tr>
+                <tr>
+                    <td class="created" colspan="4"><textarea name="sakuseibi" rows="1">作成日:　年　月　日</textarea>
+                </tr>
+                <tr>
+                    <td class="mokuji">議題</td>
+                    <td colspan="3"><textarea name="gidai" rows="1"></textarea></td>
+                </tr>
+                <tr>
+                    <td class="mokuji">開催日時</td>
+                    <td><textarea name="nitiji" rows="1"></textarea></td>
+                    <td class="mokuji">開催場所</td>
+                    <td><textarea name="basyo" rows="1"></textarea></td>
+                </tr>
+                <tr>
+                    <td class="mokuji">作成者</td>
+                    <td colspan="3"><textarea name="sakuseisya" rows="1"></textarea></td>
+                </tr>
+                <tr>
+                    <td class="mokuji">出席者</td>
+                    <td colspan="3"><textarea name="syussekisya" rows="1"></textarea></td>
+                </tr>
+            </table>
+            <br>
+            <table border="1" width="500px">
+                <tr>
+                    <td class="content" colspan="4">議事内容</td>
+                </tr>
+                <tr>
+                    <td colspan="4"><textarea class="gijinaiyou" rows="20" width="500px"></textarea></td>
+                </tr>
+            </table>
+        </css>
+    </body>
+</html>

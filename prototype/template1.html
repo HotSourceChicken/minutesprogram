@@ -1,0 +1,122 @@
+<html>
+    <head>
+        <mate charset="UTF-8"></mate>
+    </head>
+    <body>
+        <form class="contact-form">
+            <div>
+                <b>議事録</b><br>
+            </div>
+            
+            <div class="item">
+                <label class="label" for="name">作成日</label>
+                <input id="sakuseibi" type="text" name="sakuseibi"><br>
+            </div>
+            
+            <div class="item">
+                <label class="label" for="name">作成者</label>
+                <input id="sakuseisya" type="text" name="sakuseisya"><br>
+            </div>
+            
+            <div class="item">
+                <label class="label" for="name">会議名</label>
+                <input id="kaigimei" type="text" name="kaigimei"><br>
+            </div>
+
+            <div class="item">
+                <label class="label" for="name">日時</label>
+                <input id="nitiji" type="text" name="nitiji"><br>
+            </div>
+
+            <div class="item">
+                <label class="label" for="name">場所</label>
+                <input id="basyo" type="text" name="basyo"><br>
+            </div>
+
+            <div class="item">
+                <label class="label" for="name">出席者</label>
+                <input id="syussekisya" type="text" name="syussekisya"><br>
+            </div>
+
+            <div class="item">
+                <label class="label" for="message">議題</label>
+                <textarea rows="4" id="gidai" name="gidai"></textarea><br>
+            </div>
+
+            <div class="item">
+                <label class="label" for="message">決定事項や問題点</label>
+                <textarea rows="4" id="ketteijikou" name="ketteijikou"></textarea><br>
+            </div>
+
+            <div class="item">
+                <label class="label" for="message">議題に関する資料</label>
+                <textarea rows="2" id="siryou" name="siryou"></textarea><br>
+            </div>
+
+            <div class="item">
+                <label class="label" for="message">次回予定</label>
+                <textarea rows="2" id="jikaiyotei" name="jikaiyotei"></textarea><br>
+            </div>
+        </form>
+
+        <style>
+            .contact-form {
+              border: 1px solid #ccc;
+              padding: 10px;
+              font-size: 13px;
+              font-family: sans-serif;
+            }
+            .contact-form .item {
+              display: block;
+              overflow: hidden;
+              margin-bottom: 10px;
+            }
+            .contact-form .item.no-label {
+              padding: 5px 0px 5px 60px;
+            }
+            .contact-form .item .label {
+              float: left;
+              padding: 5px;
+              margin:0;
+            }
+            .contact-form .item input[type=text],
+            .contact-form .item textarea {
+            display: block;
+            margin-left: 60px;
+            width: 200px;
+            padding: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            font-size: 13px;
+            }
+            .contact-form .item ::placeholder {
+            color: #ccc;
+            }
+            .contact-form .item textarea {
+            outline: none;
+            border: 1px solid #ccc;
+            resize: vertical;
+            }
+            input[type=submit] {
+            border: none;
+            outline: none;
+            display: block;
+            line-height: 30px;
+            width: 160px;
+            text-align: center;
+            font-size: 13px;
+            color: #fff;
+            background-color: #696;
+            border-bottom: 4px solid #464;
+            cursor:pointer;
+
+            box-sizing: content-box;
+            transition:0.3s ease all
+            }
+            input[type=submit]:hover{
+            border-bottom-width:0;
+            transform:translateY(4px)
+            }
+        </style>
+    </body>
+</html>
